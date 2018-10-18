@@ -182,44 +182,133 @@ console.log(randomNumber);
 
 console.log("----------------------------------");
 
-
 //Level 14-----------------------------------------
 
-let todos = [
-  {
-    description: "Learn JavaScript",
-    done: false,
-  },
-  {
-    description: "Learn React",
-    done: true,
-  }
-]
+let aa = 2 + 2;
 
-function add(todo, finish) {
-  todos.push({
-    description: todo,
-    done: finish
-  })
+let bb = 3 - 2;
+
+let cc = 3 * 3;
+
+let dd = 4 / 2;
+
+let ee = 7 % 2; // result:1
+
+let ff = 3 * 2 + 1; // result:7
+console.log("------------------------------------------------------------");
+
+//Level 15-------------------------------------------------------
+
+let one = 2;
+let two = 4;
+let three = 5;
+let four = 6;
+let five = 7;
+
+function add(num1, num2, num3, num4, num5) {
+  console.log(num1 + num2 + num3 + num4 + num5);
+}
+function substract(num1, num2, num3, num4, num5) {
+  console.log(num1 - num2 - num3 - num4 - num5);
+}
+function multiply(num1, num2, num3, num4, num5) {
+  console.log(num1 * num2 * num3 * num4 * num5);
+}
+function divide(num1, num2, num3, num4, num5) {
+  console.log(num1 / num2 / num3 / num4 / num5);
+}
+function modulo(num1, num2, num3, num4, num5) {
+  console.log((((num1 % num2) % num3) % num4) % num5);
 }
 
-function read(){
-  todos.forEach(function (todo){
-    console.log(`todo: ${todo. description}, Done: ${todo.done}`)
-  })
-}
 
-function deleted(index){
-  todos.splice(index, 1)
-}
 
-function update(index, description, done){
-  todos[index] = {
-    description: description,
-    done: done
-  }
-}
 
-function search(index){
-  todos.filter(index => index.length>6)
-}
+add(one, two, three, four, five);
+substract(one, two, three, four, five);
+multiply(one, two, three, four, five);
+divide(one, two, three, four, five);
+modulo(one, two, three, four, five);
+console.log("--------------------------------------------------------")
+//Level 17------------------------------------------------------------
+
+
+//Level 18-----------------------------------------------------------
+function calculateSquareArea(num1) {console.log(num1*num1)}
+function calculateSquarePerimeter(num1) { console.log(num1*num1*num1*num1) }
+function calculateCircleArea(num1) { console.log(3.14*(num1*num1)) }
+function calculateCircleCircumference(int) { console.log(2*3.14*(int)) }
+function calculateCubeArea(int) { console.log(6*int*int) }
+function calculateCubeVolume(int) { console.log(int*int*int) }
+function calculateTubeArea(int) { console.log(2*3.14*int*int) }
+function calculateTubeVolume(int,int2) { console.log(3.14*(int*int)*(int2)) }
+
+calculateSquareArea(2)
+calculateSquarePerimeter(6) 
+calculateCircleArea(2) 
+calculateCircleCircumference(7) 
+calculateCubeArea(2) 
+calculateCubeVolume(5)
+calculateTubeArea(2) 
+calculateTubeVolume(2, 7) 
+
+//Level 26------------------------------------------------------------
+
+
+
+// let todos = [
+//   {
+//     description: "Learn JavaScript",
+//     done: false
+//   },
+//   {
+//     description: "Learn React",
+//     done: true
+//   }
+// ];
+
+// function add(todo, finish) {
+//   todos.push({
+//     description: todo,
+//     done: finish
+//   });
+// }
+
+// function read() {
+//   todos.forEach(function(todo) {
+//     console.log(`todo: ${todo.description}, Done: ${todo.done}`);
+//   });
+// }
+
+// function deleted(index) {
+//   todos.splice(index, 1);
+// }
+
+// function update(index, description, done) {
+//   todos[index] = {
+//     description: description,
+//     done: done
+//   };
+// }
+
+// // function search1(key, value){
+// //   let result = todos.filter(
+// //     function (todo){
+// //       return todo[key] === value
+// //     }
+// //   )
+// // }
+// // search1()
+// // console.log(result)
+
+// function search2(key, value) {
+//   let result = todos.filter(function(todo) {
+//     if (typeof todo[key] === "String") {
+//       return todo[key].toLowerCase.includes(value.toLowerCase);
+//     } else {
+//       return todo[key] === value;
+//     }
+//   });
+//   console.log(result);
+// }
+//--------------------------------------------------------------
